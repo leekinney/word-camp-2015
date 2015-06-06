@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>evoHaX | Hack to Change Lives!</title>
+		<title>WordCamp Philly | Web Accessibility</title>
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -22,7 +22,7 @@
 				<section class='slide1'>
 					<img src='img/wapuu-krimpet.png' alt='wapuu the wordpress mascot'>
 					<h1>WordCamp 2015</h1>
-					<h2>6.13.15</h2>
+					<h2>June 13th</h2>
 					<h4><a href='https://twitter.com/_leekinney'>@_leekinney</a></h4>
 					<h4>#wcphilly</h4>
 				</section>
@@ -31,7 +31,7 @@
 					<h2>About me</h2>
 						<ul>
 							<li class='fragment'>Front-end Developer</li>
-							<li class='fragment'>GDI Philly Organizer</li>
+							<li class='fragment'>GDI Philly Events Organizer</li>
 							<li class='fragment'>LadyHacks &amp; Ela Conf Organizer</li>
 							<li class='fragment'>Web Accessibility Advocate</li>
 						</ul>
@@ -40,10 +40,12 @@
 				<section>
 					<h2>What we're going to cover today</h2>
 					<ul>
-						<li class='fragment'>Quick rundown of design best practices</li>
+						<li class='fragment'>Why is this important?</li>
+						<li class='fragment'>We'll look at some examples</li>
+						<li class='fragment'>Quick overview</li>
 						<li class='fragment'>Introduce some tools &amp; techniques</li>
 						<li class='fragment'>WordPress specific accessibility</li>
-						<li class='fragment'>Questions</li>
+						<li class='fragment'>Questions?</li>
 					</ul>
 				</section>
 
@@ -120,7 +122,7 @@
 							<li class='fragment'>Keyboard shortcuts</li>
 							<li class='fragment'>Using captions and transcripts</li>
 							<li class='fragment'>Good alt text</li>
-							<li class='fragment'>Many times, good design practices create accessibility as a side effect.</li>
+							<li class='fragment'>Many times, good design practices create accessibility as a side effect</li>
 						</ul>
 				</section>
 
@@ -139,6 +141,19 @@
 				<section>
 					<h2>Visual disabilities</h2>
 					<img src="img/blind-woman-walking-hi.png" alt="Blind woman with white cane" width='300' height='605'/>
+				</section>
+
+				<section>
+					<h2>Semantic HTML</h2>
+					<ul>
+						<li class='fragment'>Gives the page meaning and structure.</li>
+						<li class='fragment'>Don't use header tags out of order.</li>
+						<li class='fragment'>Don't use HTML for presentation.</li>
+						<li class='fragment'>That's what CSS is for!</li>
+					</ul>
+				</section>
+
+				<section data-background="img/virgin-wave.png">
 				</section>
 
 				<section>
@@ -177,9 +192,8 @@
 					</div>
 
 						<ul class='tools'>
-							<li><a href='http://colorfilter.wickline.org/'>Color blind simulation</a></li>
-							<li><a href='http://www.paciellogroup.com/resources/contrastanalyser/'>Color contrast analyzer software</a></li>
 							<li><a href='http://leaverou.github.io/contrast-ratio/'>Color contrast ratio</a></li>
+							<li><a href='http://webaim.org/resources/contrastchecker/'>WebAIM contrast checker</a></li>
 						</ul>
 				</section>
 
@@ -188,7 +202,7 @@
 					<ul>
 						<li class="fragment">Don't rely on color to indicate something.</li>
 						<li class="fragment">Red/green color blindness is the most common.</li>
-						<li class="fragment">Minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text. (<a href="http://webaim.org/resources/contrastchecker/" target="_blank">Checker</a>)</li>
+						<li class="fragment">Minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text.</li>
 						<li class="fragment">Try zooming in your designs.</li>
 					</ul>
 				</section>
@@ -205,7 +219,9 @@
 						</ul>
 				</section>
 
-				<section data-background-video="web-aim-recording.mp4">
+				<section>
+					<h2>Removing :focus</h2>
+					<h3 class='fragment'>Hint: Don't do it. <span class='fragment'>Ever.</span></h3>
 				</section>
 
 				<section>
@@ -339,15 +355,8 @@
 
 				<!-- Final slides-->
 				<section>
-					<h2>To sum it all up</h2>
-					<h3>Show your users some love!</h3>
-					<img src="img/computer.png" alt="computer with a heart"/>
-				</section>
-
-				<section>
-					<h2>Browser extensions</h2>
+					<h2>Tools &amp; extensions</h2>
 						<ul>
-							<li><a href='https://chrome.google.com/webstore/detail/color-contrast-analyzer/dagdlcijhfbmgkjokkjicnnfimlebcll?hl=en'>Chrome | Color Contrast Checker</a></li>
 							<li><a href='https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en'>Chrome | Accessibility Dev Tools</a></li>
 							<li><a href='https://addons.mozilla.org/en-US/firefox/addon/accessibility-evaluation-toolb/'>Firefox | Accessibility Evaluation Toolbar</a></li>
 							<li><a href='http://wave.webaim.org/toolbar/'>Wave Toolbar (available as a Chrome or Firefox Extension or bookmarklet</a></li>
@@ -360,7 +369,6 @@
 				<section>
 					<h2>Resources</h2>
 						<ul>
-							<li class="fragment"><a href="http://www.nvda-project.org/" target="_blank">NonVisual Desktop Access (NVDA)</a>,a free and open source screen reader for Windows.</li>
 							<li class="fragment"><a href="http://www.w3.org/WAI/" target="_blank">W3C Web Accessibility Initiative (WAI).</a></li>
 							<li class="fragment"><a href="http://webaim.org/" target="_blank">WebAIM</a>, an accessibility-focused organization with great information.</li>
 							<li class="fragment"><a href="http://design4access.nomensa.com/checklist.html" target="_blank">Accessibilty Checklist</a></li>
@@ -370,12 +378,8 @@
 
 				<section>
 					<h2>Thank you!</h2>
-						<ul>
-							<li class='fragment'><a href='http://www.meetup.com/Girl-Develop-It-Philadelphia/'>Keep an eye on GDI Philly</a></li>
-							<li class='fragment'>March 3.25.15 - Web Accessibility class</li>
-							<li class='fragment'><a href='http://phillywomenintech.com/2015/01/17/h-web-accessibility/'>Philly Women in Tech Summit</a></li>
-							<li class='fragment'><a href='https://www.twitter.com/_leekinney'>Tweet at me! @_leekinney</a></li>
-							<li class='fragment'><a href=''>http://ph.ly/network-web-accessibility</a></li>
+							<h3><a href='https://www.twitter.com/_leekinney'>@_leekinney</a></h3>
+							<h3><a href='http://leekinney.github.io/evoHaX/#/'>leekinney.github.io/word-camp-2015</a></h3>
 						</ul>
 				</section>
 
