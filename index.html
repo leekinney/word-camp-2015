@@ -1,1 +1,418 @@
-my page
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>WordCamp Philly | Web Accessibility</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel='stylesheet' href='css/reveal.min.css'>
+		<link rel='stylesheet' href='css/theme/simple.css' id='theme'>
+		<link rel='stylesheet' href='css/custom.css'>
+	</head>
+
+	<body>
+		<div class='reveal'>
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class='slides'>
+				<section class='slide1'>
+					<img src='img/wapuu-krimpet.png' alt='wapuu the wordpress mascot'>
+					<h1>WordCamp 2015</h1>
+					<h2>June 13th</h2>
+					<h4><a href='https://twitter.com/_leekinney'>@_leekinney</a></h4>
+					<h4>#wcphilly</h4>
+				</section>
+
+				<section>
+					<h2>About me</h2>
+						<ul>
+							<li class='fragment'>Front-end Developer</li>
+							<li class='fragment'>GDI Philly Events Organizer</li>
+							<li class='fragment'>LadyHacks &amp; Ela Conf Organizer</li>
+							<li class='fragment'>Web Accessibility Advocate</li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>What we're going to cover today</h2>
+					<ul>
+						<li class='fragment'>Why is this important?</li>
+						<li class='fragment'>We'll look at some examples</li>
+						<li class='fragment'>Quick overview</li>
+						<li class='fragment'>Introduce some tools &amp; techniques</li>
+						<li class='fragment'>WordPress specific accessibility</li>
+						<li class='fragment'>Questions?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Virgin America</h2>
+						<blockquote>&ldquo;The result is a site that gets flyers booked nearly twice as fast, on any kind of device.&rdquo;</blockquote>
+						<p class='virgin'><a href='http://www.wired.com/2014/06/the-super-slick-ux-of-virgin-americas-new-booking-site/'>Wired Magazine</a></p>
+						<blockquote>&ldquo;After looking at how flyers were using its website to search and book flights, the airline sought to completely reinvent the web experience.&rdquo;</blockquote>
+						<p class='virgin'><a href='http://mashable.com/2014/05/31/virgin-america-website/'>Mashable</a></p>
+						<blockquote>&ldquo;I grudgingly admit, the new site not only looks far better, it works better too.&rdquo;</blockquote>
+						<p class='virgin'><a href='http://pando.com/2014/05/23/im-old-and-virgin-americas-new-site-is-too-cool-for-me/'>Pando</a></p>
+				</section>
+
+				<section data-background="img/virgin-normal.png">
+				</section>
+
+				<section data-background="img/virgin-blurry.png">
+				</section>
+
+				<section data-background="img/virgin-cataracts.png">
+				</section>
+
+				<section>
+				</section>
+
+				<section>
+					<h2>Web accessibility is about:</h2>
+					<ul>
+						<li class='fragment'>making your sites useful to as many people as possible.</li>
+						<li class='fragment'>helping your users.</li>
+						<li class='fragment'>awareness &amp; accountability.</li>
+						<li class='fragment'>leadership.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Why make our sites accessible?</h2>
+					<img src='img/united-states-map.png' alt='' width='900' height='571'>
+
+					<p class='credit'><a href="http://www.census.gov/newsroom/releases/archives/facts_for_features_special_editions/cb10-ff13.html" target="_blank">source</a></p>
+
+					<aside class='notes'>
+						<ul>
+							<li>Expand our potential audience! 54 million people in the US have a disability, 1.8 million are unable to see printed words, and 16.1 million have a cognitive or mental illness that impedes daily functioning</li>
+							<li>Be in compliance with legal guidelines, like Section 504 and 508 compliance.</li>
+							<li>Avoid potential lawsuits.</li>
+							<li>Do the right thing.	</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>More stats!</h2>
+					<h3>Of all US computer users.. </h3>
+						<ul>
+							<li style='color: #666;' class="fragment">17% <span class='large'>(22 million)</span> have a mild visual difficulty or impairment, 9% <span class='large'>(11 million)</span> are severe.</li>
+							<li style='color: #444;' class="fragment">19% <span class='large'>(24 million)</span> have a mild dexterity difficulty or impairment, 5% <span class='large'>(7 million)</span> are severe.</li>
+							<li style='color: #222;' class="fragment">18% <span class='large'>(24 million)</span> have a mild hearing difficulty or impairment, 2% <span class='large'>(2.5 million)</span> are severe.</li>
+						</ul>
+						<p class='credit fragment'>(Source: <a href='http://www.microsoft.com/enable/research/phase1.aspx' target='_blank'>Study Commissioned by Microsoft Corporation and Conducted by Forrester Research, Inc.</a></p>
+				</section>
+
+				<section>
+					<h2>Something to think about...</h2><br>
+					<div style="width: 960px; height: 500px; padding-left: 20%;">
+						<blockquote class="twitter-tweet" lang="en"><p>There’s more users with disabilities than people using IE8. &#10;&#10;Still, we tend to drop accessibility in favour of IE8 support.&#10;&#10; <a href="https://twitter.com/hashtag/fronteers14?src=hash">#fronteers14</a></p>&mdash; Rik Schennink (@rikschennink) <a href="https://twitter.com/rikschennink/status/520521059884617728">October 10, 2014</a></blockquote>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+				</section>
+
+				<section>
+					<h2>Benefits of Accessibility</h2>
+						<ul>
+							<li class='fragment'>Keyboard shortcuts</li>
+							<li class='fragment'>Using captions and transcripts</li>
+							<li class='fragment'>Good alt text</li>
+							<li class='fragment'>Many times, good design practices create accessibility as a side effect</li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>Types of Disability</h2>
+						<ul>
+							<li class="fragment">Visual disabilities: blind or low-sight, color blind</li>
+							<li class="fragment">Hearing disabilities: deaf or hard-of-hearing</li>
+							<li class="fragment">Physical disabilities: MS, ALS, paraplegic/quadriplegic, epilepsy</li>
+							<li class="fragment">Cognitive disabilities: dyslexia, low literacy, learning disabilities</li>
+							<li class="fragment">Seizures: prone to photoepileptic seizures</li>
+							<li class="fragment"><a href="https://the-pastry-box-project.net/anne-gibson/2014-July-31">An Alphabet of Accessibility Issues</a></li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>Visual disabilities</h2>
+					<img src="img/blind-woman-walking-hi.png" alt="Blind woman with white cane" width='300' height='605'/>
+				</section>
+
+				<section>
+					<h2>Semantic HTML</h2>
+					<ul>
+						<li class='fragment'>Gives the page meaning and structure.</li>
+						<li class='fragment'>Don't use header tags out of order.</li>
+						<li class='fragment'>Don't use HTML for presentation.</li>
+						<li class='fragment'>That's what CSS is for!</li>
+					</ul>
+				</section>
+
+				<section data-background="img/virgin-wave.png">
+				</section>
+
+				<section>
+					<h2>Alt text</h2>
+					<ul>
+						<li class="fragment">Alternate text describes pictorial content in words.</li>
+						<li class="fragment">context.</li>
+						<li class="fragment">function not content.</li>
+						<li class="fragment">If an image is purely decorative, use "" to instruct a screen reader to skip it.</li>
+						<!-- <li class="fragment">Instead of using &ldquo;longdesc,&rdquo; provide a caption or link.</li> -->
+					</ul>
+					<pre><code data-trim>
+						<p>&#60;img src="img/twitter-logo.png" alt="follow us on twitter"&#62;</p>
+					</code></pre>
+				</section>
+
+				<section>
+					<img src='img/alt-text-decision-tree.png' alt='' width='575' height='719'>
+					<p><a href='http://www.4syllables.com.au/2010/12/text-alternatives-decision-tree'>Source: 4 Syllables &amp; further reading</a></p>
+				</section>
+
+				<section>
+					<h2>Use color wisely</h2>
+					<img src="img/crayons.png" alt="Colorwheel of crayons" width='600' height='600'>
+				</section>
+
+				<section>
+					<h2 class='contrast'>Provide contrast</h2>
+					<!-- <img class='contrast' src="img/contrast.png" alt="Crosswalk with contrasting colors"> -->
+					<!-- <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/antifluor/2074560932/" target="_blank">antifluor</a> <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank">cc</a></p> -->
+					<div class='contrast1'>
+						<p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+					</div>
+					<div class='contrast2'>
+						<p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+					</div>
+
+						<ul class='tools'>
+							<li><a href='http://leaverou.github.io/contrast-ratio/'>Color contrast ratio</a></li>
+							<li><a href='http://webaim.org/resources/contrastchecker/'>WebAIM contrast checker</a></li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>Color &amp; contrast best practices</h2>
+					<ul>
+						<li class="fragment">Don't rely on color to indicate something.</li>
+						<li class="fragment">Red/green color blindness is the most common.</li>
+						<li class="fragment">Minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text.</li>
+						<li class="fragment">Try zooming in your designs.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Links!</h2>
+						<ul>
+							<li class="fragment">Link text should make sense.</li>
+							<li class="fragment">Make sure the user can tell where it's going to take them.</li>
+							<li class="fragment">Don't open links in a new window (unless you let the user know first).</li>
+							<li class="fragment">Use :focus wisely.</li>
+							<li class="fragment">Don't rely on color to signify a link.</li>
+							<li class="fragment"><a href='https://www.wuhcag.com/link-purpose-link-only/'>Further reading on link text</a></li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>Removing :focus</h2>
+					<h3 class='fragment'>Hint: Don't do it. <span class='fragment'>Ever.</span></h3>
+				</section>
+
+				<section>
+					<h2>Hiding content</h2>
+						<pre><code data-trim>.hide {display: none;}</code></pre>
+						<pre><code data-trim>.hide {visibility: hidden;}</code></pre>
+						<pre><code data-trim>.hide {width:0px, height:0px;}</code></pre>
+						<pre><code data-trim>.hide {text-indent: -10000px;}</code></pre>
+						<p>Recommended:</p>
+						<pre><code data-trim>.hidden {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}</code></pre>
+						<p class='fragment'><a href='http://webaim.org/techniques/css/invisiblecontent/'>More info on hiding content</a></p>
+
+				</section>
+
+				<section>
+					<h2>Navigation</h2>
+					<ul>
+						<li>"Skip to main content" links</li>
+						<li>Hover navigation</li>
+						<li>Make sure users can tab through each element</li>
+					</ul>
+				</section>
+
+				<!-- Hearing disabilities-->
+
+				<!-- <section>
+					<h2>Provide good captions</h2>
+					<img src="img/in_ur_reality.png" alt="Stick figure attaching captions to cats. Dialog- Man: Oh hi; I'm here from the internet; Man 2: What are you doing!?; Man: Gluing captions to your cats."/>
+					<p class="credit">Credit: <a href="http://xkcd.com/262/" target="_blank">Randall Munroe</a> <a href="http://creativecommons.org/licenses/by-nc/2.5/" target="_blank">cc</a></p>
+				</section> -->
+
+				<section>
+					<h2>Dealing with Hearing Disabilities</h2>
+					<ul>
+						<li class="fragment">Provide captions or transcripts.</li>
+						<li class="fragment">Don't rely on sounds.</li>
+						<li class="fragment">Be especially careful if your site targets older users.</li>
+					</ul>
+				</section>
+
+				<!-- Physical disabilities-->
+				<!-- <section>
+					<h2>Mice are Scary</h2>
+					<img src="img/stormtroopermouse.jpg" alt="Two stormtrooper figurines jumping away from a plastic mouse"/>
+					<p class="credit">Photo credit: <a href="http://www.flickr.com/photos/st3f4n/4286044406/" target="_blank">St&#233;fan</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">cc</a></p>
+				</section> -->
+
+				<section>
+					<h2>Dealing with Physical Disabilities</h2>
+					<ul>
+						<li class="fragment">Limited mobility users interact with the screen via keyboard.</li>
+						<li class="fragment">Other users use a mouse, but have trouble with fine motor control.</li>
+						<li class="fragment">Make clickable elements large.</li>
+						<li class="fragment">Avoid clickable page elements that move.</li>
+						<li class='fragment'>Animations with rapid flickers.</li>
+					</ul>
+				</section>
+
+				<!-- Cognitive disabilities-->
+				<section>
+					<h2>Don't overwhelm</h2>
+					<img src="img/overwhelm.png" alt="Sign post with multiple signs"/>
+				</section>
+
+				<section>
+					<h2>Provide plenty of time</h2>
+					<img src="img/alarm-clock.png" alt="Alarm clock" height='440' width='364'/>
+					<li class="fragment">If you have timed content (forms, image galleries, etc.) allow users to control extend time.</li>
+				</section>
+
+				<section>
+					<h2>CAPTCHAs don't just catch robots</h2>
+					<img src="img/robot-captcha.png" alt="robot" height='343' width='400' />
+					<p class="credit">Photo credit: <a href="http://www.freepik.com/free-photos-vectors/icon" target='_blank'>Icon vector designed by Freepik</a></p>
+					<img src="img/captcha.PNG" alt="Screenshot of a Captcha"/>
+				</section>
+
+				<section>
+					<h2>CAPTCHAs</h2>
+					<ul>
+						<li class="fragment">Aren't blind-friendly.</li>
+						<li class='fragment'>Are very difficult for users with learning disabilities like dyslexia.</li>
+						<li class='fragment'>Annoy everyone.</li>
+						<li class='fragment'>Consider <a href="http://webaim.org/blog/spam_free_accessible_forms/" target="_blank">an alternative method</a>.</li>
+						<li class="fragment"><a href='http://www.webaxe.org/rock-bottom-for-captcha-white-house/'>We the People example</a></li>
+					</ul>
+				</section>
+
+				 <section>
+            <h2>WordPress alternatives to Captchas</h2>
+            <ul>
+               <li><a href="https://wordpress.org/plugins/contact-form-7/screenshots/">Contact Form 7</a></li>
+               <li><a href="https://wordpress.org/plugins/wp-spamshield/">SpamShield</a></li>
+            </ul>
+         </section>
+
+				<section>
+					<h2>Dealing with cognitive disabilities</h2>
+						<ul>
+							<li class="fragment">Not a lot of research in this area.</li>
+							<li class="fragment">Minimize cognitive load.</li>
+							<li class="fragment">Use common icons to mark important tasks.</li>
+						</ul>
+				</section>
+
+				<!-- Final slides-->
+				<section>
+					<h2>Tools &amp; extensions</h2>
+						<ul>
+							<li><a href='https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en'>Chrome | Accessibility Dev Tools</a></li>
+							<li><a href='https://addons.mozilla.org/en-US/firefox/addon/accessibility-evaluation-toolb/'>Firefox | Accessibility Evaluation Toolbar</a></li>
+							<li><a href='http://wave.webaim.org/toolbar/'>Wave Toolbar (available as a Chrome or Firefox Extension or bookmarklet</a></li>
+							<li><a href='https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en'>ChromeVox</a></li>
+							<li><a href='https://addons.mozilla.org/en-US/firefox/addon/fangs-screen-reader-emulator/?src=search'>Firefox | Fangs</a></li>
+							<li><a href='https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl?hl=en&gl=US'>Chrome | No Coffee (low-vision simulator)</a></li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>Resources</h2>
+						<ul>
+               <li class="fragment"><a href="http://a11yproject.com/">The Accessibility Project</a></li>
+							 <li class="fragment"><a href="http://www.w3.org/WAI/" target="_blank">W3C Web Accessibility Initiative (WAI).</a></li>
+							 <li class="fragment"><a href="http://webaim.org/" target="_blank">WebAIM</a>, an accessibility-focused organization with great information.</li>
+							 <li class="fragment"><a href="http://design4access.nomensa.com/checklist.html" target="_blank">Accessibilty Checklist</a></li>
+							 <li class='fragment'><a href='http://webaim.org/resources/designers/#infographic'>Web Accessibility for Designers</a></li>
+               <li><a href="http://a11ywins.tumblr.com/">A11Y Wins</a></li>
+						</ul>
+				</section>
+
+         <section>
+            <h2>WordPress &amp; Accessibility Resources</h2>
+               <ul>
+                  <li class="fragment"><a href="https://github.com/wpaccessibility/a11ythemepatterns">Patterns for creating accessible-ready WordPress themes</a></li>
+                  <li class="fragment"><a href="https://make.wordpress.org/accessibility/">WP Accessibility Team</a></li>
+                  <li class="fragment"><a href="https://twitter.com/WPAccessibility">WPAccessibility Team Twitter</a></li>
+                  <li
+                          class="fragment"><a href="https://wordpress.org/themes/search/accessibility/">Accessible
+                     Themes</a></li>
+                  <li class="fragment"><a href="https://foxland.fi/downloads/kuorinka/">Kuorinka Theme</a></li>
+               </ul>
+         </section>
+
+				<section>
+					<h2>Thank you!</h2>
+							<h3><a href='https://www.twitter.com/_leekinney'>@_leekinney</a></h3>
+							<h3><a href='http://leekinney.github.io/evoHaX/#/'>leekinney.github.io/word-camp-2015</a></h3>
+						</ul>
+				</section>
+
+			</div><!-- end slides -->
+		</div><!-- end reveal -->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+	</body>
+</html>
+

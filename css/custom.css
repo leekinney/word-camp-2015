@@ -1,0 +1,69 @@
+/*.slides section::after {content: ""; background: url(../img/background-bayada-logo.png) no-repeat; opacity: 0.5; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; background-position: 100% 100%; }*/
+
+.reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {border-right-color: #17BEBB;}
+
+.reveal .controls div.navigate-left.enabled:hover {border-right-color: #258ea6;}
+
+.reveal .controls div.navigate-right.enabled:hover {border-left-color: #258EA6;}
+
+.reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {border-left-color: #17BEBB;}
+
+.reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {color: #17bebb;}
+
+section.slide1.present img.main-logo, section.present img.background-logo {border: none; box-shadow: none; }
+
+section.slide1.present img.main-logo {margin-right: 15%;}
+
+section.present img.background-logo {position: absolute; right: 0;}
+
+section.slide1.present {background: #fff;}
+
+.reveal {color: #403E3F;}
+
+.reveal h1 {font-size: 2.5em; color: #222;}
+
+.reveal h2 {color: #258EA6;}
+
+.reveal h3 {color: #99cc33;}
+
+.reveal a:not(.image) {color: #17BEBB; text-decoration: underline;}
+
+.reveal a:not(.image):hover {text-decoration: underline; color: #CD5334;}
+
+.reveal a:not(.image):focus {background: #fab3a9;}
+
+.reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {color: #17BEBB;}
+
+.reveal .progress span {background: #F55E63;}
+
+.reveal section img {border: none; box-shadow: none;}
+
+p.credit {font-size: 14px; }
+
+p.virgin {font-size: 16px;}
+
+.tweet-embed {margin-left: 20%;}
+
+.italics {font-style: italic;}
+
+span.large {font-size: 1.5em; color: #111;}
+
+p.useful {clear: both; margin-top: 40px;}
+
+ul.tools {margin-top: 30px;}
+
+ul.tools li {list-style: none;}
+
+ul.tools li a {font-size: 0.7em;}
+
+.pink {color: #f55e63;}
+
+h2.contrast {margin-bottom: 40px;}
+
+.contrast1 {width: 45%; background: #dbdbdb; color: #646464; padding: 10px; float: left;}
+
+.contrast1 p, .contrast2 p {font-size: 18px; line-height: 150%;}
+
+.contrast2 {width: 45%; float: left; background: #ebebeb; color: #444; }
+
+.reveal code {font-size: 1.15em;}
